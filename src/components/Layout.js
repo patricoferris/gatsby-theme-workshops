@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout as ThemeLayout, Container, Main } from 'theme-ui';
-import { StaticQuery } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import Header from './Header';
 import Helmet from 'react-helmet';
 
