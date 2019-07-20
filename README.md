@@ -72,6 +72,30 @@ options: {
 }
 ```
 
+### Installation
+----------------------
+
+To use the Gatsby Theme with your project, in your empty root directory run `yarn add react react-dom gatsby @patricoferris/gatsby-theme-workshops`
+
+Add to new file called `gastby-config.js` with the following contents: 
+
+```js
+module.exports = {
+  plugin: [
+    {
+      resolve: `@patricoferris/gatsby-theme-workshops`,
+      options: {
+        // You can add the options as specified above
+        workshopFolder: 'workshops', // Name of your folder for them (ab)
+        basePath: '/workshops', // The base path for your workshop content i.e. www.my-site.com<basePath>/workshop-1
+        sections: ['setup', 'prerequisites', 'notes']
+      }
+    }
+  ]
+}
+```
+
+Next run `yarn gatsby develop`. 
 
 ### What does it look like? 
 ----------------------
