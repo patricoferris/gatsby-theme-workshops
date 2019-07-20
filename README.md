@@ -16,6 +16,7 @@ For the longest time our workshops have been written using markdown and then par
 
 The idea was to move our project away from this structure and use a more familiar stack with Javascript or Python - then Gatsby announced the stable release of themes and it seemed perfect. It solves all of our problems allowing us to share our resources with whoever wants to easily integrate them into their codebase.
 
+
 ### Workshop Structure 
 -----------------------------
 
@@ -57,6 +58,7 @@ This workshop aims to **help** you understand...
 
 And lastly the `images` folder - this is used to hold two key images (you can add others and link it in your markdown like so: `![My Lovely Image](images/my_lovely_image.png)`) the background (`bg.png`) and foreground (`fg.png`) for the cover image on the workshop. Why two? The idea is that it will make it easier to display on screens of varying aspect ratios by expanding the background when whilst keeping the foreground one centred. 
 
+
 ### Configurations
 ---------------------
 
@@ -69,6 +71,7 @@ options: {
   sections: ['notes', 'setup', 'advanced'] // The different markdown files (sections) you'll want in your workshops 
 }
 ```
+
 
 ### What does it look like? 
 ----------------------
