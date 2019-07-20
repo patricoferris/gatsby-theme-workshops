@@ -6,8 +6,7 @@ class FilterPicker extends React.Component {
 
   componentDidMount() {
     let input = document.getElementsByTagName("input")[0];
-    input.setAttribute("name", "search");
-    input.setAttribute("id", "search");
+    input.setAttribute("label", "search");
   }
 
   render() {
@@ -28,9 +27,7 @@ class FilterPicker extends React.Component {
         multiple 
         selection 
         search
-        options={options}>
-          <label for="search" className="visuallyhidden">Search</label>
-        </Dropdown>
+        options={options}/>
       </div>
     )
   }
