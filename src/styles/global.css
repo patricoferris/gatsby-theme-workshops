@@ -1,0 +1,72 @@
+body, html {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: #f90c1d;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.text {
+  color: black!important;
+}
+
+.section {
+  padding: 10px;
+  transition: all 100ms ease-in-out;
+}
+
+.section:focus {
+  outline: none;
+  color: white;
+  background-color: black;
+}
+
+.button {
+  background: #c70f65;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  padding: 4px 12px;
+  box-shadow: 0px 2px 6px rgba(100,8,50,0.3);
+  border-radius: 3px;
+  transition: ease-in-out 0.2s all;
+  grid-column: 1 / span 1;
+}
+
+.button:hover, .button:focus {
+  box-shadow: 0px 4px 6px rgba(100,8,50,0.7);
+  outline: none;
+  background: #9f0c51;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 8px;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
