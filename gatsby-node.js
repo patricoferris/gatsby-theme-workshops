@@ -39,7 +39,7 @@ exports.onPreBootstrap = ({ reporter }, options) => {
     fs.mkdirSync(`${path}/workshop-default/images`);
     fs.writeFile(`${path}/workshop-default/metadata.yaml`, yamlData, (err) => console.error(err));
     sections.map(section => {
-      fs.writeFile(`${path}/workshop-default/${section}.md`, `Default ${section}`, (err) => console.error(err));
+      fs.writeFile(`${path}/workshop-default/${section}.md`, markdownGenerator(section), (err) => console.error(err));
     })
     fs.writeFile(`${path}/workshop-default/images/fg.png`, buf, (err) => console.error(err));
     fs.writeFile(`${path}/workshop-default/images/bg.png`, buf, (err) => console.error(err));
