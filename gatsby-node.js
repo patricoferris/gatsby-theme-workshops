@@ -18,6 +18,13 @@ const markdownGenerator = (section) => {
   return `--- \ntitle: ${section} \n--- \nWelcome to my lovely little section called ${section} - Gatsby is great :)`;
 }
 
+const consoleError = (tag, err) => {
+  if (err) {
+    console.error(`Oh no, something's wrong with ${tag}`)
+    console.error(err);
+  }
+}
+
 const png = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==";
 var buf = Buffer.alloc(128, png, 'base64');
 
@@ -31,12 +38,12 @@ exports.onPreBootstrap = ({ reporter }, options) => {
     fs.mkdirSync(path);
     fs.mkdirSync(`${path}/workshop-default`);
     fs.mkdirSync(`${path}/workshop-default/images`);
-    fs.writeFile(`${path}/workshop-default/metadata.yaml`, yamlData, (err) => console.error(err));
+    fs.writeFile(`${path}/workshop-default/metadata.yaml`, yamlData, (err) => consoleError("metadata", err));
     sections.map(section => {
-      fs.writeFile(`${path}/workshop-default/${section}.md`, markdownGenerator(section), (err) => console.error(err));
+      fs.writeFile(`${path}/workshop-default/${section}.md`, markdownGenerator(section), (err) => consoleError("markdown", err));
     })
-    fs.writeFile(`${path}/workshop-default/images/fg.png`, buf, (err) => console.error(err));
-    fs.writeFile(`${path}/workshop-default/images/bg.png`, buf, (err) => console.error(err));
+    fs.writeFile(`${path}/workshop-default/images/fg.png`, buf, (err) => consoleError("image", err));
+    fs.writeFile(`${path}/workshop-default/images/bg.png`, buf, (err) => consoleError("image", err));
   }
 }
 
