@@ -1,6 +1,6 @@
 {
   "name": "@patricoferris/gatsby-theme-workshops",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
   "main": "index.js",
   "description": "",
@@ -20,12 +20,12 @@
     "clean": "gatsby clean"
   },
   "peerDependencies": {
-    "gatsby": "^2.13.9",
+    "gatsby": "^2.13.32",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "gatsby": "^2.13.9",
+    "gatsby": "^2.13.32",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
