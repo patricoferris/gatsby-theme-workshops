@@ -9,9 +9,9 @@ const yamlData = `
    - Machine Learning
    - Neural Networks
   sections:
-   - prerequisites
-   - setup
-   - notes
+   - Prerequisites
+   - Setup
+   - Notes
 `
 
 const markdownGenerator = (section) => {

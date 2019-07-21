@@ -5,6 +5,7 @@
 
 Welcome to a Gatsby Theme for building lessons, workshops, tutorials and much more. This project started from the want to shift a current project the site for [Cambridge University's Tech Society's](hackersatcambridge.com) currently written in Swift, to something a bit more manageable and friendly to beginners whilst not sacrificing on capabilities, extensibility, performance and usability. Gatsby and their new Themes feature seemed like the perfect fit for turning our site into a **blazingly** fast one whilst also benefiting from the great community and developer ecosystem that comes with Gatsby. 
 
+
 ### Why change? 
 ----------------------------
 
@@ -92,7 +93,7 @@ module.exports = {
         // You can add the options as specified above
         workshopFolder: 'workshops', // Name of your folder for them (ab)
         basePath: '/workshops', // The base path for your workshop content i.e. www.my-site.com<basePath>/workshop-1
-        sections: ['setup', 'prerequisites', 'notes'] // The sections you want your workshops to have
+        sections: ['Setup', 'Prerequisites', 'Notes'] // The sections you want your workshops to have
       }
     }
   ]
