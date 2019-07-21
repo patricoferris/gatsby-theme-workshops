@@ -1,6 +1,6 @@
 {
-  "name": "@patricoferris/gatsby-theme-workshops",
-  "version": "1.0.4",
+  "name": "gatsby-theme-workshops",
+  "version": "1.0.5",
   "license": "MIT",
   "main": "index.js",
   "description": "",

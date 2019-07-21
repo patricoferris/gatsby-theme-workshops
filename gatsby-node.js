@@ -15,13 +15,7 @@ const yamlData = `
 `
 
 const markdownGenerator = (section) => {
-  return `
-    ---
-    title: ${section}
-    ---
-
-    Welcome to my lovely little section called ${section} - Gatsby is great :)
-  `;
+  return `--- \ntitle: ${section} \n--- \nWelcome to my lovely little section called ${section} - Gatsby is great :)`;
 }
 
 const png = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==";
