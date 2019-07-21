@@ -30,10 +30,8 @@ const Layout = ({ children, back }) => {
         const {title, description} = data.site.siteMetadata;
         return (
           <ThemeLayout>
-            <Helmet defaultTitle={title} titleTemplate={`%s - ${title}`}>
+            <Helmet defaultTitle={title} titleTemplate={`%s - ${title}`} description={description}>
               <meta charSet="utf-8" />
-              <title>{title}</title>
-              <meta name="description" content={description} />
               <html lang="en" />
             </Helmet>
             <Header back={back}></Header>
