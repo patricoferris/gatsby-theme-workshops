@@ -77,10 +77,14 @@ options: {
 
 To use the Gatsby Theme with your project, in your empty root directory run `yarn add react react-dom gatsby @patricoferris/gatsby-theme-workshops`
 
-Add to new file called `gastby-config.js` with the following contents: 
+Add a new file called `gastby-config.js` with the following contents: 
 
 ```js
 module.exports = {
+  siteMetadata: {
+    title: `Computer Science Workshops`, // Your site title
+    description: `A cool website for computer science related workshops` // A short description
+  },
   plugin: [
     {
       resolve: `@patricoferris/gatsby-theme-workshops`,
@@ -88,14 +92,14 @@ module.exports = {
         // You can add the options as specified above
         workshopFolder: 'workshops', // Name of your folder for them (ab)
         basePath: '/workshops', // The base path for your workshop content i.e. www.my-site.com<basePath>/workshop-1
-        sections: ['setup', 'prerequisites', 'notes']
+        sections: ['setup', 'prerequisites', 'notes'] // The sections you want your workshops to have
       }
     }
   ]
 }
 ```
 
-Next run `yarn gatsby develop`. 
+Next run `yarn gatsby develop`. This should create your first default workshop with some simple images and content so you can get a feel for how to lay out your amazing workshops. Now go and create! 
 
 ### What does it look like? 
 ----------------------
