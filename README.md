@@ -1,7 +1,7 @@
 # Gatsby Theme Workshops 
 ---------------------------
 
-[Demo Site](www.gatsby-theme-workshops-demo.netlify.com)
+[Demo Site](https://gatsby-theme-workshops-demo.netlify.com/)
 
 *A brief history*
 
