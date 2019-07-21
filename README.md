@@ -1,6 +1,8 @@
 # Gatsby Theme Workshops 
 ---------------------------
 
+[Demo Site](www.gatsby-theme-workshops-demo.netlify.com)
+
 *A brief history*
 
 Welcome to a Gatsby Theme for building lessons, workshops, tutorials and much more. This project started from the want to shift a current project the site for [Cambridge University's Tech Society's](hackersatcambridge.com) currently written in Swift, to something a bit more manageable and friendly to beginners whilst not sacrificing on capabilities, extensibility, performance and usability. Gatsby and their new Themes feature seemed like the perfect fit for turning our site into a **blazingly** fast one whilst also benefiting from the great community and developer ecosystem that comes with Gatsby. 
@@ -37,12 +39,19 @@ The `yaml` file is for storing the metadata about your workshop and needs the fo
 
 ```yaml
 title: My Default Workshop
-  contributors:
-   - Patrick Ferris
-  tags:
-   - Deep Learning
-   - Machine Learning
-   - Neural Networks
+
+contributors:
+  - Patrick Ferris
+
+tags:
+  - Deep Learning
+  - Machine Learning
+  - Neural Networks
+
+sections: 
+  - Prerequisites
+  - Setup
+  - Notes
 ```
 
 The tags are particularly useful as the theme uses [react-semantic-ui](https://react.semantic-ui.com/) to add filtering by tag to your workshops from the very start.
