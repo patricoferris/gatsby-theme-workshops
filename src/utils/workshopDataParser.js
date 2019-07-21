@@ -73,7 +73,9 @@ export const workshopDataParser = (dataArray) => {
 
   // Sorting the list based on the ordering given in the metadata.yaml
   cleanData.sections.sort(function(a, b){  
-    return sortingArr.indexOf(a.title.toLowerCase()) - sortingArr.indexOf(b.title.toLowerCase());
+    console.log(cleanData.sections);
+    console.log(sortingArr);
+    return sortingArr.indexOf(a.title) - sortingArr.indexOf(b.title);
   });
 
   return cleanData

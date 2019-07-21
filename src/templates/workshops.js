@@ -93,11 +93,9 @@ const WorkshopsTemplate = () => {
   });
 
   return (
-    <>
-      <Layout back={'/'}>
-        <WorkshopList workshops={workshops}></WorkshopList>
-      </Layout>
-    </>
+    <Layout back={'/'}>
+      <WorkshopList workshops={workshops}></WorkshopList>
+    </Layout>
   )
 }
 

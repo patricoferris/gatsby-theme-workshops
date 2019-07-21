@@ -31,7 +31,7 @@ var buf = Buffer.alloc(128, png, 'base64');
 // Check for the correct directory 
 exports.onPreBootstrap = ({ reporter }, options) => {
   const path = options.workshopFolder || 'workshops';
-  const sections = options.workshopSections || ['prerequisites', 'setup', 'notes'];
+  const sections = options.workshopSections || ['Prerequisites', 'Setup', 'Notes'];
 
   if (!fs.existsSync(path)) {
     reporter.info(`Creating the ${path} directory and default workshop`);

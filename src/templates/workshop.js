@@ -41,20 +41,19 @@ const WorkshopTemplate = ({ data : { allFile : { edges }} }) => {
   // Cleaning up the data 
   let cleanData = workshopDataParser(edges);
   return (
-    <>
-      <Layout back={'./workshops'}>
-        <div key='images' style={{position: 'relative'}}>
-            <Img style={style.background} alt='Background hero image' fluid={cleanData.images.bg}/>
-            <Img style={style.foreground} alt='Foreground hero image' fluid={cleanData.images.fg}/>
-        </div>
-        <h1>{cleanData.title}</h1>
-        <div 
-          style={style.description}
-          dangerouslySetInnerHTML={{__html: cleanData.Description}}></div>
-        <h2>by {cleanData.contributors}</h2>
-        <CollapsableList sections={cleanData.sections}></CollapsableList>
-      </Layout>
-    </>)
+    <Layout back={'./workshops'}>
+      <div key='images' style={{position: 'relative'}}>
+          <Img style={style.background} alt='Background hero image' fluid={cleanData.images.bg}/>
+          <Img style={style.foreground} alt='Foreground hero image' fluid={cleanData.images.fg}/>
+      </div>
+      <h1>{cleanData.title}</h1>
+      <div 
+        style={style.description}
+        dangerouslySetInnerHTML={{__html: cleanData.Description}}></div>
+      <h2>by {cleanData.contributors}</h2>
+      <CollapsableList sections={cleanData.sections}></CollapsableList>
+    </Layout>
+    )
 }
 
 const style = {
